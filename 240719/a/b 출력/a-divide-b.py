@@ -4,6 +4,8 @@ b = int(n.split()[1])
 
 print(f'{a//b}.', end = "") #일의 자리
 
+a %= b
+
 for _ in range(20):
     a *= 10
     print(a//b, end = "")
