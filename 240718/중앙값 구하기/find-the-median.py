@@ -10,7 +10,10 @@ if a >= b:
         else:
             print(c)
 else:
-    if a <= c:
-        print(c)
+    if a >= c:
+        print(a) 
     else:
-        print(a)
+        if b >= c:
+            print(c)
+        else:
+            print(b)
