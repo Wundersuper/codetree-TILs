@@ -2,8 +2,8 @@ n = int(input())
 sum_val = 0
 
 for i in range(n):
-    n = int(input())
-    if i % 2 == 1 and i % 3 == 0:
-        sum_val += i
+    m = int(input())
+    if m % 2 == 1 and m % 3 == 0:
+        sum_val += m
 
 print(sum_val)
