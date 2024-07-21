@@ -1,13 +1,11 @@
 n = int(input())
-temp = 1
-
-for i in range(1, n + 1):
-    if i % 2 != 0:
-        for j in range(temp, temp + n):
-            print(j, end=' ')
-        print()
-    else:
-        for k in range(j + 2, j + 2 + 2 * n, 2):
-            print(k, end=' ')  
-        temp = k + 1
-        print()
+cnt = 0
+	
+for i in range(n):
+    for j in range(n):
+        if i % 2 == 0:
+            cnt += 1
+        else:
+            cnt += 2
+        print(cnt, end=" ")
+    print()
