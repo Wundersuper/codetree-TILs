@@ -6,6 +6,6 @@ for i in range(n):
         print(chr(init), end = "")
         init += 1
         
-        if chr(init) == 'Z':
+        if init > ord('Z'):
             init = ord('A')
     print()
