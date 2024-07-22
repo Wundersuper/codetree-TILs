@@ -5,4 +5,7 @@ for i in range(n):
     for j in range(i+1):
         print(chr(init), end = "")
         init += 1
+        
+        if chr(init) == 'Z':
+            init = ord('A')
     print()
