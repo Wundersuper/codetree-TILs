@@ -8,5 +8,5 @@ for _ in range(n):
         if elem % 2 == 0:
             even.append(elem)
     
-    for elem in even[::-1]:
-        print(elem, end = " ")
+for elem in even[::-1]:
+    print(elem, end = " ")
