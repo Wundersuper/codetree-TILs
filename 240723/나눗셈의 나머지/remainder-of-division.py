@@ -3,7 +3,7 @@ a, b = map(int, input().split())
 count_arr = [0] * b
 
 while True:
-    if a < 1:
+    if a <= 1:
         break
     count_arr[a % b] += 1
     a //= b
