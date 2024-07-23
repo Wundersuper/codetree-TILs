@@ -1,18 +1,22 @@
-import sys
 N = int(input())
 
 arr = list(map(int, input().split()))
 
-max_val = -sys.maxsize
+max_val = 0
+nn = []
 
-for i in range(1, N):
+for i in range(N):
+    if arr[i] in nn:
+        continue
+    
+    if arr[i] in arr[i+1:]:
+        nn.append(arr[i])
+        continue
+
     if arr[i] > max_val:
         max_val = arr[i]
-    
-    if arr.count(max_val) >= 2:
-        max_val = -sys.maxsize
 
-if max_val in arr:
-    print(max_val)
-else:
+if max_val == 0:
     print(-1)
+else:
+    print(max_val)
