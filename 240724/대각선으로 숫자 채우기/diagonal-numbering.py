@@ -10,7 +10,7 @@ val = 1
 
 for i in range(cnt+1):
     a = 0
-    b = icc
+    b = i
     for j in range(i+1):
         if (a<n) & (b<m):
             arr[a][b] = val
