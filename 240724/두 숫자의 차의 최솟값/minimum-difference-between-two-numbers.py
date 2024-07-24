@@ -2,7 +2,7 @@ n = int(input())
 
 arr = list(map(int, input().split()))
 
-min_val = arr[0]
+min_val = 1000
 
 for i in range(n):
     for j in range(i+1,n):
