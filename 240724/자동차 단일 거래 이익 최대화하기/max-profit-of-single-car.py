@@ -7,7 +7,7 @@ price = list(map(int, input().split()))
 prev_min_idx = 0
 min_idx = 0
 
-for i in range(prev_min_idx, n):
+for i in range(prev_min_idx, n-1):
     if price[i] < price[min_idx]:
         min_idx = i
 
