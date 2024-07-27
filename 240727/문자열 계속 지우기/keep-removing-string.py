@@ -1,17 +1,29 @@
 str_a = input()
 str_b = input()
 
-lst_a = list(str_a)
+len_a = len(str_a)
+len_b = len(str_b)
 
 while True:
-    if len(str_a) >= len(str_b):
-        if str_b not in ''.join(lst_a):
-            print(''.join(lst_a))
+    idx = -1
+
+    target = len_a - len_b + 1:
+    for i in range(target):
+        is_same = True
+
+        for j in range(len_b):
+            if str_a[i + j] != str_b[j]:
+                is_same = False
+                break
+        
+        if is_same:
+            idx = i
             break
-        else:
-            idx = ''.join(lst_a).index(str_b)
-            lst_a = lst_a[:idx] + lst_a[idx+2:]
-            continue
-    else:
-        print(str_a)
+
+    if idx == -1:
         break
+
+    str_a = str_a[:idx] + str_a[idx + len_b:]
+    len_a = len(str_a)
+
+print(str_a)
