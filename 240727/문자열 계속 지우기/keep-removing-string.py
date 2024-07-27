@@ -14,4 +14,4 @@ while True:
             continue
     else:
         print(str_a)
-        break
+        continue
