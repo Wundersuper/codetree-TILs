@@ -1,16 +1,13 @@
 str1 = input()
-lst = list(str1)
+str2 = str1
+lst1 = list(str1)
+lst2 = list(str2)
 
-#for i in range(len(lst)):
-#    if lst[i] == lst[0]:
-#        lst[i] = lst[1]
-#    if lst[i] == lst[1]:
-#        lst[i] = lst[0]
+for i in range(len(lst1)):
+    if lst1[i] == lst2[0]:
+        lst1[i] = lst2[1]
+    elif lst1[i] == lst2[1]:
+        lst1[i] = lst2[0]
 
-#re_str = ''.join(lst)
-#print(re_str)
-
-
-str2 = str1.replace('c', 'o')
-
-print(str2[0] + 'c' + str2[2:])
+result = ''.join(lst1)
+print(result)
