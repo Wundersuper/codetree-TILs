@@ -7,7 +7,7 @@ len_b = len(str_b)
 while True:
     idx = -1
 
-    target = len_a - len_b + 1:
+    target = len_a - len_b + 1
     for i in range(target):
         is_same = True
 
