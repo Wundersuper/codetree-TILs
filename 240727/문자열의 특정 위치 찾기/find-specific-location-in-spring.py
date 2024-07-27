@@ -3,7 +3,7 @@ string, a = input().split()
 leng = len(string)
 start_idx = -1
 
-for i in range(leng-1):
+for i in range(leng):
     if string[i] == a:
         start_idx = i
         break
