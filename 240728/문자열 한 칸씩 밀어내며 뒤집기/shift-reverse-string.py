@@ -12,6 +12,6 @@ for i in range(q):
         s = s[-1] + s[:-1]
 
     else:
-        s = s[-1] + s[-2] + s[-3] + s[-4]
+        s = s[::-1]
 
     print(s)
