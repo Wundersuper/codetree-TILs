@@ -5,7 +5,7 @@ lst_B = list(B)
 len_B = len(lst_B)
 
 for i in range(len_B):
-    if lst_B == 'L':
+    if lst_B[i] == 'L':
         A = A[1:] + A[0]
 
     else:
