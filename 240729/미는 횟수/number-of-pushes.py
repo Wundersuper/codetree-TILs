@@ -3,7 +3,7 @@ B = input()
 
 cnt = 0
 
-for i in range(len(A)):
+for i in range(100):
     if cnt == len(A):
         print(-1)
 
