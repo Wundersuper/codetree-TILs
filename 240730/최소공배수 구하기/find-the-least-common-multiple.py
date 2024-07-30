@@ -2,11 +2,11 @@ n, m = tuple(map(int, input().split()))
 
 
 def lcm(a, b):
-    for i in range(1, 500):
+    for i in range(max(a, b), (a * b) + 1):
         if i % a == 0 and i % b == 0:
-            min_val = i
+            lcm = i
             break
-    
-    print(min_val)
+    print(lcm)
+        
 
 lcm(n, m)
