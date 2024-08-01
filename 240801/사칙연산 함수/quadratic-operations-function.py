@@ -12,7 +12,7 @@ def basic_oper(n1, s, n2):
     elif s == '*':
         return f'{n1} {s} {n2} = {n1 * n2}'
     elif s == '/':
-        return f'{n1} {s} {n2} = {n1 / n2:.0f}'
+        return f'{n1} {s} {n2} = {n1 // n2}'
     else:
         return False
     
