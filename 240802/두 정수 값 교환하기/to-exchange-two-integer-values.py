@@ -3,7 +3,8 @@ n, m = map(int, input().split())
 
 def swap(a, b):
     a, b = b, a
-    print(a, b)
+    return a, b
 
 
-swap(n, m)
+n, m = swap(n, m)
+print(n, m)
