@@ -12,9 +12,11 @@ weather_pred = [
     for date, day, prediction in arr
 ]
 
+ans = Weather("9999-99-99", "", "")
+
 for i in range(n):
     if weather_pred[i].pred == 'Rain':
-        min_idx = i
-        break
+        if ans.date >= weather_pred[i].date:
+            ans = weather_pred[i]
 
-print(weather_pred[min_idx].date, weather_pred[min_idx].day, weather_pred[min_idx].pred)
+print(ans.date, ans.day, ans.pred)
