@@ -9,15 +9,17 @@ for i in range(n):
     move = int(move)
 
     if direction == 'L':
-        for j in range(start-move+1, start+1):
-            tile[j] = 1
-            white[j] += 1
-        start -= move-1
+        #for j in range(start-move+1, start+1):
+        for j in range(1, move+1):
+            tile[start - j] = 1
+            white[start - j] += 1
+        start -= move
     else:
-        for j in range(start, start+move):
-            tile[j] = 2
-            black[j] += 1
-        start += move-1
+        #for j in range(start, start+move):
+        for j in range(move):
+            tile[start+j] = 2
+            black[start+j] += 1
+        start += move
 
 w, b, g = 0, 0, 0
 for i in range(len(tile)):
