@@ -8,7 +8,7 @@ for i in range(n):
     x = int(x)
 
     if d == 'L':
-        for j in range(x):
+        for j in range(1, x+1):
             line[start - j] += 1
         start -= x
     else:
