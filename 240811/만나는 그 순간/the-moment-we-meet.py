@@ -29,7 +29,7 @@ for i in range(M):
             B.append(loc_b)
 
 ans = -1
-for i in range(1, 1000000):
+for i in range(len(A)):
     if A[i] == B[i]:
         ans = i+1
         break
