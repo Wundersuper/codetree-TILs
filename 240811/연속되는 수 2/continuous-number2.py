@@ -5,15 +5,14 @@ nums = [
     for _ in range(N)
 ]
 
-index = []
-for i in range(N):
-    if i == 0 or nums[i] != nums[i-1]:
-        index.append(i)
+cnt = 1
+result = 1
+for i in range(1, N):
+    if nums[i] == nums[i-1]:
+        cnt += 1
+    else:
+        result = max(cnt, result)
+        cnt = 1
+    result = max(cnt, result)
 
-maxval = 0
-for i in range(1, len(index)):
-    cnt = index[i] - index[i-1]
-    if maxval < cnt:
-        maxval = cnt
-
-print(maxval)
+print(result)
