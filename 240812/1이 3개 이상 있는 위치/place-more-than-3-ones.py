@@ -15,9 +15,10 @@ def in_range(x, y):
 cnt = 0
 cnt_one = 0
 
-for dx, dy in zip(dxs, dys):
-    for i in range(n):
-        for j in range(n):
+
+for i in range(n):
+    for j in range(n):
+        for dx, dy in zip(dxs, dys):
             x, y = i, j
             nx, ny = x + dx, y + dy
             if in_range(nx, ny) and arr[nx][ny] == 1:
