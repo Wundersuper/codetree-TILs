@@ -32,7 +32,7 @@ for i in range(1, time+1):
 
 cnt = 0
 for i in range(2, time+1):
-    if first[i] != first[i-1]:
+    if first[i-1] > 0 and first[i] != first[i-1]:
         cnt += 1
 
 print(cnt)
