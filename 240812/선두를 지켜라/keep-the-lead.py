@@ -1,8 +1,8 @@
 N, M = tuple(map(int, input().split()))
 
-loc_a = [0] * 2000
-loc_b = [0] * 2000
-first = [0] * 2000
+loc_a = [0] * 1000000
+loc_b = [0] * 1000000
+first = [0] * 1000000
 
 cur_loc, time = 0, 0
 for i in range(N):
