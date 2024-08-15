@@ -23,21 +23,15 @@ def start_info(n, k):
 x, y, dir_num = start_info(N, K)
 dxs, dys = [0, 1, 0, -1], [1, 0, -1, 0] #RDLU
 
-cnt = 1
-for i in range(1000):
+cnt = 0
+while in_range(x, y):
     if maps[x][y] == '/':
         dir_num = (3 - dir_num) % 4
-        x, y = x + dxs[dir_num], y + dys[dir_num]
-        if in_range(x, y):
-            cnt += 1
-        else:
-            break
+        cnt += 1
     elif maps[x][y] == '\\':
         dir_num = (4 - dir_num + 1) % 4
-        x, y = x + dxs[dir_num], y + dys[dir_num]
-        if in_range(x, y):
-            cnt += 1
-        else:
-            break
+        cnt += 1
+
+    x, y = x + dxs[dir_num], y + dys[dir_num]
 
 print(cnt)
