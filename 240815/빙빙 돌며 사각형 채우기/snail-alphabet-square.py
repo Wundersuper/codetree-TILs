@@ -21,7 +21,9 @@ for i in range(2, n*m+1):
     a += 1
     tile[x][y] = chr(a)
     if ord(tile[x][y]) > ord('Z'):
-        tile[x][y] = chr(ord('A'))
+        a = ord('A')
+        tile[x][y] = chr(a)
+        
 
 
 for i in range(n):
