@@ -1,8 +1,5 @@
 N = int(input())
-maps = [
-    list(input())
-    for _ in range(N)
-]
+maps = [list(input()) for _ in range(N)]
 K = int(input()) #레이저 쏘는 위치
 
 
@@ -24,8 +21,7 @@ def start_info(n, k):
 
 
 x, y, dir_num = start_info(N, K)
-loc = [[0] * N for _ in range(N)]
-dxs, dys = [0, 1, -1, 0], [1, 0, 0, -1] #RDLU
+dxs, dys = [0, 1, 0, -1], [1, 0, -1, 0] #RDLU
 
 cnt = 1
 for i in range(1000):
