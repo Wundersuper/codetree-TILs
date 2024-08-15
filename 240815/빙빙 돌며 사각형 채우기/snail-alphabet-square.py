@@ -9,8 +9,8 @@ def in_range(x, y):
 
 
 x, y, dir_num = 0, 0, 0
-alphabet = ord('A')
-tile[x][y] = chr(alphabet)
+a = ord('A')
+tile[x][y] = chr(a)
 
 for i in range(2, n*m+1):
     nx, ny = x + dxs[dir_num], y + dys[dir_num]
@@ -18,10 +18,10 @@ for i in range(2, n*m+1):
         dir_num = (dir_num + 1) % 4
     
     x, y = x + dxs[dir_num], y + dys[dir_num]
-    alphabet += 1
-    tile[x][y] = chr(alphabet)
+    a += 1
+    tile[x][y] = chr(a)
     if ord(tile[x][y]) > ord('Z'):
-        tile[x][y] = chr(alphabet)
+        tile[x][y] = chr(a)
 
 for i in range(n):
     for j in range(m):
