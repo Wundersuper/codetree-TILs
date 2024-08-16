@@ -21,10 +21,11 @@ for elem in cmd:
     elif elem == 'R':
         dir_num = (dir_num + 4 - 1) % 4
     elif elem == 'F':
-        x, y = x + dxs[dir_num], y + dys[dir_num]
-    if not in_range(x, y):
-        continue
-    
-    sum_val += tile[x][y]
+        nx, ny = x + dxs[dir_num], y + dys[dir_num]
+        if not in_range(nx, ny):
+            continue
+        else:
+            x, y = nx, ny
+            sum_val += tile[x][y]
 
 print(sum_val)
