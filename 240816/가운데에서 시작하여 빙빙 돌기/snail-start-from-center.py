@@ -13,7 +13,7 @@ def in_range(x, y):
 
 for i in range(2, n*n+1):
     nx, ny = x + dxs[dir_num], y + dys[dir_num]
-    if not in_range(nx, ny) or tile[nx][ny] != 0:
+    if not in_range(nx, ny):
         dir_num = (dir_num + 1) % 4
     
     x, y = x + dxs[dir_num], y + dys[dir_num]
