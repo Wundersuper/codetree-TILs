@@ -1,8 +1,5 @@
 R, C = tuple(map(int, input().split()))
-arr = [
-    input().split()
-    for _ in range(C)
-]
+arr = [input().split() for _ in range(R)]
 
 cnt = 0
 for i in range(1, R):
