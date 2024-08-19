@@ -4,7 +4,7 @@ nums = list(map(int, input().split()))
 total_sum = sum(nums)
 
 min_val = 100
-for i in range(N-1):
+for i in range(N):
     for j in range(i+1, N):
         sum_val = total_sum - (nums[i] + nums[j])
         diff = abs(S - sum_val)
