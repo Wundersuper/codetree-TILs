@@ -1,9 +1,11 @@
+import sys
+
 N, S = tuple(map(int, input().split()))
 nums = list(map(int, input().split()))
 
 total_sum = sum(nums)
 
-min_val = 100
+min_val = sys.maxsize
 for i in range(N):
     for j in range(i+1, N):
         sum_val = total_sum - (nums[i] + nums[j])
