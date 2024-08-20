@@ -3,7 +3,7 @@ arr_a = list(map(int, input().split())) # N
 arr_b = list(map(int, input().split())) # M
 
 cnt = 0
-for i in range(N-2):
+for i in range(N-M+1):
     part_a = []
     for j in range(i, i+M):
         part_a.append(arr_a[j])
