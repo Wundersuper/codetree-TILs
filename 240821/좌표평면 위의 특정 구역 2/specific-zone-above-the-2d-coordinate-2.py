@@ -19,4 +19,4 @@ for i in range(N):
     ans = abs(max(xs) - min(xs)) * abs(max(ys) - min(ys))
     min_val = min(min_val, ans)
 
-print(ans)
+print(min_val)
