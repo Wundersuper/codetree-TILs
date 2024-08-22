@@ -14,7 +14,7 @@ def get_diff(a, b, c, d):
     result = 0
     if sum1 != sum2 and sum2 != sum3 and sum3 != sum1:
         return max_diff - min_diff
-    else:
+    elif sum1 == sum2 or sum2 == sum3 or sum3 == sum1:
         return -1
 
 
