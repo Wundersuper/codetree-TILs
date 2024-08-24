@@ -1,6 +1,6 @@
 n = int(input())
 line = [
-    tuple(map(int, input().split()))
+    list(map(int, input().split()))
     for _ in range(n)
 ]
 
@@ -12,9 +12,8 @@ def is_crossed(a, b, c):
         if i == a or i == b or i == c:
             continue
         
-        a, b = line[i]
-        for dot in range(a, b+1):
-            arr[dot] += 1
+        for y in range(line[i][0], line[i][1]+1):
+            arr[y] += 1
         
     for i in range(101):
         if arr[i] >= 2:
