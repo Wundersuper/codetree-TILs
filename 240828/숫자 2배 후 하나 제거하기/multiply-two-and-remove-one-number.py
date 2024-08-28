@@ -7,13 +7,13 @@ min_sum = sys.maxsize
 for i in range(n):
     arr[i] *= 2
 
-    sum_val = 0
     for j in range(n):
         remain_arr = []
         for k, elem in enumerate(arr):
             if k != j:
                 remain_arr.append(elem)
         
+        sum_val = 0
         for k in range(n-2):
             sum_val += abs(remain_arr[k+1] - remain_arr[k])
         
